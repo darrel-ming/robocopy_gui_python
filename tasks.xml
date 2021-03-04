@@ -1,0 +1,2 @@
+<tasks>
+  <task guid="246a4107-a94b-420f-8d85-8862942d3140"><source>D:/ch_study/bin</source><excludedAttributes /><target>F:/copy_test</target><customRobocopySwitches>/s /tbd /z /np /r:12 /w:5 /e /fft</customRobocopySwitches><lastOperation /><scheduled>False</scheduled><useCustomOptions>False</useCustomOptions></task></tasks>

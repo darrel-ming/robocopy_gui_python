@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="img">
+    <file>UI/rsc/1 (2).png</file>
+    <file>UI/rsc/wildcard.png</file>
+    <file>UI/rsc/browse.png</file>
+    <file>UI/rsc/cancel.png</file>
+    <file>UI/rsc/exclude.png</file>
+    <file>UI/rsc/okpng.png</file>
+    <file>UI/rsc/target.png</file>
+    <file>UI/rsc/backup.png</file>
+    <file>UI/rsc/restore.png</file>
+    <file>UI/rsc/gnome-schedule-icon.png</file>
+    <file>UI/rsc/history-icon-png-4683.png</file>
+    <file>UI/rsc/task.png</file>
+    <file>UI/rsc/task_add.png</file>
+    <file>UI/rsc/task_remove.png</file>
+    <file>UI/rsc/RoboMirror.ico</file>
+    <file>UI/rsc/about.png</file>
+  </qresource>
+</RCC>
