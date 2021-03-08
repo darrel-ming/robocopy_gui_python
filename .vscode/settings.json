@@ -1,6 +1,6 @@
 {
     "python.pythonPath": "f:\\Woks\\Simon_Sweden\\venv\\Scripts\\python.exe",
-    "pyside2-vsc.designer-creator.path": "C:\\Qt\\Qt5.12.0\\5.12.0\\msvc2017_64\\bin\\designer.exe",
+    "pyside2-vsc.designer-creator.path": "f:\\Woks\\Simon_Sweden\\venv\\Lib\\site-packages\\PySide2\\designer.exe",
     "pyside2-vsc.uic.cmd":"f:\\Woks\\Simon_Sweden\\venv\\Scripts\\pyside2-uic.exe",
     "pyside2-vsc.rcc.cmd":"f:\\Woks\\Simon_Sweden\\venv\\Scripts\\pyside2-rcc.exe"
 }

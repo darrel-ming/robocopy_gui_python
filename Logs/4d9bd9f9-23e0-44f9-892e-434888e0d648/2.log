@@ -1,0 +1,48 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows     ::     Version XP010
+-------------------------------------------------------------------------------
+
+  Started : Mon Mar 08 13:34:51 2021
+
+   Source : F:\Woks\Simon_Sweden\robocopy\UI\__pycache__\
+     Dest : F:\copy_test\
+
+    Files : *.*
+	    
+  Options : *.* /TBD /FFT /S /E /COPY:DAT /Z /NP /R:12 /W:5 
+
+------------------------------------------------------------------------------
+
+	                  17	F:\Woks\Simon_Sweden\robocopy\UI\__pycache__\
+	*EXTRA Dir        -1	F:\copy_test\Test\
+	    New File  		    1403	dlgAbout.cpython-36.pyc
+	    New File  		    8385	dlgEditTask.cpython-36.pyc
+	    New File  		    4205	dlgExclude.cpython-36.pyc
+	    New File  		    2192	dlgHistory.cpython-36.pyc
+	    New File  		    1328	dlgLog.cpython-36.pyc
+	    New File  		    3199	dlgPending.cpython-36.pyc
+	    New File  		    3269	dlgSchedule.cpython-36.pyc
+	    New File  		   11743	frmMainWindow.cpython-36.pyc
+	    New File  		    1596	LabelItemDelegate.cpython-36.pyc
+	    New File  		    2314	Ui_DlgAbout.cpython-36.pyc
+	    New File  		    9820	Ui_DlgEdit.cpython-36.pyc
+	    New File  		    4322	Ui_DlgExclude.cpython-36.pyc
+	    New File  		    2528	Ui_DlgHistory.cpython-36.pyc
+	    New File  		    1347	Ui_DlgLog.cpython-36.pyc
+	    New File  		    5110	Ui_DlgPending.cpython-36.pyc
+	    New File  		    2465	Ui_DlgSchedule.cpython-36.pyc
+	    New File  		    4817	Ui_FrmMainForm.cpython-36.pyc
+
+------------------------------------------------------------------------------
+
+                Total    Copied   Skipped  Mismatch    FAILED    Extras
+     Dirs :         1         0         1         0         0         1
+    Files :        17        17         0         0         0         0
+    Bytes :    68.4 k    68.4 k         0         0         0         0
+    Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+    Speed :            11673833 Bytes/sec.
+    Speed :             667.982 MegaBytes/min.
+
+    Ended : Mon Mar 08 13:34:51 2021

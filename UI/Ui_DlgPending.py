@@ -151,6 +151,7 @@ class Ui_dlgPendng(object):
         font1.setItalic(False)
         font1.setWeight(50)
         self.textEdit.setFont(font1)
+        self.textEdit.setReadOnly(True)
 
         self.verticalLayout.addWidget(self.textEdit)
 

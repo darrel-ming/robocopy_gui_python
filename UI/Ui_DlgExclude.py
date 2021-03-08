@@ -25,7 +25,7 @@ class Ui_DlgExclude(object):
         DlgExclude.setStyleSheet(u"font: 10pt \"Segoe UI Symbol\";")
         self.verticalLayout_3 = QVBoxLayout(DlgExclude)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.verticalLayout_3.setContentsMargins(0, 0, 0, -1)
+        self.verticalLayout_3.setContentsMargins(9, 9, 9, -1)
         self.groupBox = QGroupBox(DlgExclude)
         self.groupBox.setObjectName(u"groupBox")
         self.horizontalLayout = QHBoxLayout(self.groupBox)
@@ -85,16 +85,28 @@ class Ui_DlgExclude(object):
 
         self.groupBox_2 = QGroupBox(DlgExclude)
         self.groupBox_2.setObjectName(u"groupBox_2")
-        self.groupBox_2.setMinimumSize(QSize(0, 40))
+        self.groupBox_2.setMinimumSize(QSize(0, 60))
+        self.horizontalLayout_4 = QHBoxLayout(self.groupBox_2)
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.chkH = QCheckBox(self.groupBox_2)
         self.chkH.setObjectName(u"chkH")
-        self.chkH.setGeometry(QRect(10, 20, 70, 17))
+
+        self.horizontalLayout_4.addWidget(self.chkH)
+
         self.chkS = QCheckBox(self.groupBox_2)
         self.chkS.setObjectName(u"chkS")
-        self.chkS.setGeometry(QRect(100, 20, 70, 17))
+
+        self.horizontalLayout_4.addWidget(self.chkS)
+
         self.chkE = QCheckBox(self.groupBox_2)
         self.chkE.setObjectName(u"chkE")
-        self.chkE.setGeometry(QRect(190, 20, 70, 17))
+
+        self.horizontalLayout_4.addWidget(self.chkE)
+
+        self.horizontalSpacer_2 = QSpacerItem(232, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_4.addItem(self.horizontalSpacer_2)
+
 
         self.verticalLayout_3.addWidget(self.groupBox_2)
 

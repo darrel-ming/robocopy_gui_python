@@ -156,6 +156,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.txtLog = QTextEdit(self.centralwidget)
         self.txtLog.setObjectName(u"txtLog")
+        self.txtLog.setReadOnly(True)
 
         self.horizontalLayout_4.addWidget(self.txtLog)
 

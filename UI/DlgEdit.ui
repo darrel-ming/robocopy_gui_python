@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>518</width>
-    <height>615</height>
+    <width>698</width>
+    <height>594</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -294,377 +294,443 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>500</width>
-       <height>160</height>
+       <width>680</width>
+       <height>200</height>
       </size>
      </property>
      <property name="title">
       <string>Copy options</string>
      </property>
-     <widget class="QCheckBox" name="chk_s">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>41</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/S</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_m">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>60</y>
-        <width>41</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/M</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_sec">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>20</y>
-        <width>71</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/SEC</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_mov">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>40</y>
-        <width>71</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/MOV</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_a">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>60</y>
-        <width>61</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/A</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_b">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>80</y>
-        <width>61</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/B</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_copyall">
-      <property name="geometry">
-       <rect>
-        <x>170</x>
-        <y>20</y>
-        <width>91</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/COPYALL</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_nocopy">
-      <property name="geometry">
-       <rect>
-        <x>170</x>
-        <y>40</y>
-        <width>101</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/NOCOPY</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_mir">
-      <property name="geometry">
-       <rect>
-        <x>170</x>
-        <y>60</y>
-        <width>71</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/MIR</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_zb">
-      <property name="geometry">
-       <rect>
-        <x>170</x>
-        <y>80</y>
-        <width>71</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/ZB</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_create">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>20</y>
-        <width>101</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/CREATE</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_purge">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>40</y>
-        <width>111</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/PURGE</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_move">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>60</y>
-        <width>111</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/MOVE</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_fat">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>80</y>
-        <width>71</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/FAT</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_copy">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>100</y>
-        <width>81</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/COPY:</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_lev">
-      <property name="geometry">
-       <rect>
-        <x>406</x>
-        <y>20</y>
-        <width>51</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/LEV:</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="txt_lev">
-      <property name="geometry">
-       <rect>
-        <x>455</x>
-        <y>18</y>
-        <width>31</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>1</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_xo">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>80</y>
-        <width>51</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/XO</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_v">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>40</y>
-        <width>51</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/V</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_tbd">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>100</y>
-        <width>61</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/TBD</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_np">
-      <property name="geometry">
-       <rect>
-        <x>170</x>
-        <y>100</y>
-        <width>81</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/NP</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_z">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>100</y>
-        <width>71</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/Z</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_e">
-      <property name="geometry">
-       <rect>
-        <x>406</x>
-        <y>80</y>
-        <width>81</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/E</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="txt_r">
-      <property name="geometry">
-       <rect>
-        <x>455</x>
-        <y>40</y>
-        <width>31</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>1</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_r">
-      <property name="geometry">
-       <rect>
-        <x>406</x>
-        <y>40</y>
-        <width>51</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/R:</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="txt_w">
-      <property name="geometry">
-       <rect>
-        <x>455</x>
-        <y>62</y>
-        <width>31</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>1</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_w">
-      <property name="geometry">
-       <rect>
-        <x>406</x>
-        <y>62</y>
-        <width>51</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/W:</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chk_fft">
-      <property name="geometry">
-       <rect>
-        <x>406</x>
-        <y>100</y>
-        <width>81</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>/FFT</string>
-      </property>
-     </widget>
+     <layout class="QGridLayout" name="gridLayout" columnminimumwidth="0,0,0,0,0,20,10">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="chk_s">
+        <property name="text">
+         <string>/S</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="chk_sec">
+        <property name="text">
+         <string>/SEC</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QCheckBox" name="chk_copyall">
+        <property name="text">
+         <string>/COPYALL</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QCheckBox" name="chk_create">
+        <property name="text">
+         <string>/CREATE</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <layout class="QHBoxLayout" name="horizontalLayout_18">
+        <item>
+         <widget class="QCheckBox" name="chk_e">
+          <property name="text">
+           <string>/E</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>13</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="5">
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QCheckBox" name="chk_max">
+          <property name="text">
+           <string>/MAX:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txt_max">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="6">
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <widget class="QCheckBox" name="chk_maxlad">
+          <property name="text">
+           <string>/MAXLAD:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txt_maxlad">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="chk_v">
+        <property name="text">
+         <string>/V</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="chk_mov">
+        <property name="text">
+         <string>/MOV</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QCheckBox" name="chk_nocopy">
+        <property name="text">
+         <string>/NOCOPY</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QCheckBox" name="chk_purge">
+        <property name="text">
+         <string>/PURGE</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <layout class="QHBoxLayout" name="horizontalLayout_17">
+        <item>
+         <widget class="QCheckBox" name="chk_fft">
+          <property name="text">
+           <string>/FFT</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>13</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="5">
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <item>
+         <widget class="QCheckBox" name="chk_min">
+          <property name="text">
+           <string>/MIN:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txt_min">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="6">
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <item>
+         <widget class="QCheckBox" name="chk_lev">
+          <property name="text">
+           <string>/LEV:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txt_lev">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <widget class="QCheckBox" name="chk_m">
+        <property name="text">
+         <string>/M</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="chk_a">
+        <property name="text">
+         <string>/A</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QCheckBox" name="chk_mir">
+        <property name="text">
+         <string>/MIR</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QCheckBox" name="chk_move">
+        <property name="text">
+         <string>/MOVE</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <layout class="QHBoxLayout" name="horizontalLayout_16">
+        <item>
+         <widget class="QCheckBox" name="chk_j">
+          <property name="text">
+           <string>/J</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>13</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="5">
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QCheckBox" name="chk_maxage">
+          <property name="text">
+           <string>/MAXAGE:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txt_maxage">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0">
+       <widget class="QCheckBox" name="chk_xo">
+        <property name="text">
+         <string>/XO</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QCheckBox" name="chk_b">
+        <property name="text">
+         <string>/B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QCheckBox" name="chk_zb">
+        <property name="text">
+         <string>/ZB</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QCheckBox" name="chk_fat">
+        <property name="text">
+         <string>/FAT</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QCheckBox" name="chk_r">
+          <property name="text">
+           <string>/R:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txt_r">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="5">
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QCheckBox" name="chk_minage">
+          <property name="text">
+           <string>/MINAGE:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txt_minage">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0">
+       <widget class="QCheckBox" name="chk_tbd">
+        <property name="text">
+         <string>/TBD</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QCheckBox" name="chk_z">
+        <property name="text">
+         <string>/Z</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QCheckBox" name="chk_np">
+        <property name="text">
+         <string>/NP</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QCheckBox" name="chk_copy">
+        <property name="text">
+         <string>/COPY:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QCheckBox" name="chk_w">
+          <property name="text">
+           <string>/W:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txt_w">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="5">
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QCheckBox" name="chk_minlad">
+          <property name="text">
+           <string>/MINLAD:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txt_minlad">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
     </widget>
    </item>
    <item>
@@ -675,7 +741,11 @@
     </widget>
    </item>
    <item>
-    <widget class="QTextEdit" name="txtCmd"/>
+    <widget class="QTextEdit" name="txtCmd">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
    </item>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_9">

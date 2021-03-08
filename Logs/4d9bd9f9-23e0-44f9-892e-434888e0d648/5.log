@@ -1,0 +1,30 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows     ::     Version XP010
+-------------------------------------------------------------------------------
+
+  Started : Mon Mar 08 19:30:10 2021
+
+   Source : F:\Woks\Simon_Sweden\robocopy\UI\__pycache__\
+     Dest : F:\copy_test\
+
+    Files : *.*
+	    
+Exc Files : 55
+	    
+  Options : *.* /TBD /FFT /S /E /COPY:DAT /Z /NP /R:12 /W:5 
+
+------------------------------------------------------------------------------
+
+	                  17	F:\Woks\Simon_Sweden\robocopy\UI\__pycache__\
+	*EXTRA Dir        -1	F:\copy_test\Test\
+
+------------------------------------------------------------------------------
+
+                Total    Copied   Skipped  Mismatch    FAILED    Extras
+     Dirs :         1         0         1         0         0         1
+    Files :        17         0        17         0         0         0
+    Bytes :    68.4 k         0    68.4 k         0         0         0
+    Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+    Ended : Mon Mar 08 19:30:10 2021
