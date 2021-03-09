@@ -97,17 +97,24 @@ class DlgHistory(QDialog):
         Loads the history as the list
         '''
         try:
+            # Clear the table rows
             self.taskViewModel.clear()
+            # loads the log data
             self.log_data = self.logManager.LoadLogs(self._task.Guid)
+            # prepare timestamp & msg
             for task in self.log_data:
                 self.taskViewModel.appendRow([
                     QStandardItem(task['timeStamp']),
                     QStandardItem(task['message'])])
+            # set the column header
             self.taskViewModel.setHorizontalHeaderLabels(
                 Settings.HIST_TABLE_COLUMNS)
+            # set the width of columns
             self.ui.tableView.setColumnWidth(0, 200)
+            # set last column as stretchable
             self.ui.tableView.horizontalHeader().setSectionResizeMode(
                 1, QHeaderView.Stretch)
+            # set text align as left
             self.ui.tableView.horizontalHeader().setDefaultAlignment(
                 Qt.AlignLeft)
         except Exception as e:

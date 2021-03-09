@@ -19,6 +19,7 @@ class Ui_DlgExclude(object):
         if not DlgExclude.objectName():
             DlgExclude.setObjectName(u"DlgExclude")
         DlgExclude.resize(501, 551)
+        DlgExclude.setMinimumSize(QSize(500, 551))
         icon = QIcon()
         icon.addFile(u":/img/UI/rsc/exclude.png", QSize(), QIcon.Normal, QIcon.On)
         DlgExclude.setWindowIcon(icon)

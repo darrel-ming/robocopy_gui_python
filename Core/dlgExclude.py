@@ -95,6 +95,11 @@ class DlgExclude(QDialog):
 
     def Btn_Clicked(self, btn):
         '''
+        slot funtion for UI components
+        params:
+        --------
+        btn : QPushButton
+            The button that sends signal
         '''
         try:
             # OK button

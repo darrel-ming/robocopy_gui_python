@@ -10,7 +10,26 @@ from Engine.Settings import Settings
 class DlgScedule(QDialog):
     '''
     Class for task schedule dialog
+    Attributes:
+    ------------
+    ui : Ui_DlgSchedule
+        UI wrapper
+    _mirrorTask : MirrorTask
+        MirrorTask to register to 'Task Sceduler'
+    _manager : SchedulerTasksManager()
+        Manager to register/remove Task Schedules
+    Methods:
+    ----------
+    EnableControls():
+        Enable/disable controls according to the checkbox
+    Apply():
+        register/remove the mirrortask to system 'Task Scheduler'
+    Slots:
+    ----------
+    Btn_Clicked():
+        button click handler
     '''
+
     def __init__(self, parent, mirror_task):
         super(DlgScedule, self).__init__(parent)
         # setup UI
@@ -37,7 +56,7 @@ class DlgScedule(QDialog):
         try:
             if task is not None:
                 # get next triger time
-                time = task.NextRunTime
+                time = task.LastRunTime
                 # get time stamp
                 dt = datetime.datetime.fromtimestamp(
                     timestamp=time.timestamp(),
@@ -56,6 +75,9 @@ class DlgScedule(QDialog):
             print(f'Schedule Dlg Err:{e}')
 
     def Apply(self):
+        '''
+        register/remove the mirrortask to system 'Task Scheduler'
+        '''
         # get date
         sc_date = self.ui.dateEdit.date().toPython().strftime('%Y-%m-%d ')
         # get time
@@ -72,9 +94,16 @@ class DlgScedule(QDialog):
         return True
 
     def Btn_Clicked(self, btn):
+        '''
+        button click handler
+        '''
+        # OK button is pressed
         if btn == self.ui.btnOK:
+            # check if user wants to register
             if self.ui.checkBox.isChecked():
+                # check if robocopy tool exists
                 exe_path = os.getcwd() + Settings.RoboPath
+                # if not shows error msg
                 if not os.path.exists(exe_path):
                     QMessageBox.warning(
                         self,
@@ -87,11 +116,21 @@ class DlgScedule(QDialog):
         # Cancel Button
         elif btn == self.ui.btnCancel:
             self.reject()
+        # Enable/disable checkbox is pressed
         elif btn == self.ui.checkBox:
+            # Update UI components
             self.EnableControls()
 
     def EnableControls(self):
+        '''
+        Enable/disable controls according to the checkbox
+        '''
+        # get the state of the checkbox
         bEdit = self.ui.checkBox.isChecked()
+        # update the state of the UI components
+        # check box
         self.ui.comboBox.setEnabled(bEdit)
+        # date edit control
         self.ui.dateEdit.setEnabled(bEdit)
+        # time edit control
         self.ui.timeEdit.setEnabled(bEdit)
