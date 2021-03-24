@@ -18,12 +18,11 @@ class Ui_dlgPendng(object):
     def setupUi(self, dlgPendng):
         if not dlgPendng.objectName():
             dlgPendng.setObjectName(u"dlgPendng")
-        dlgPendng.resize(700, 452)
-        dlgPendng.setMinimumSize(QSize(700, 0))
+        dlgPendng.resize(700, 552)
+        dlgPendng.setMinimumSize(QSize(700, 550))
         dlgPendng.setStyleSheet(u"QPushButton, Label{font: 10pt \"Segoe UI Symbol\";}")
         self.verticalLayout_2 = QVBoxLayout(dlgPendng)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.frame = QFrame(dlgPendng)
         self.frame.setObjectName(u"frame")
         self.frame.setMinimumSize(QSize(32, 0))
@@ -61,73 +60,163 @@ class Ui_dlgPendng(object):
 
         self.frame_2 = QFrame(dlgPendng)
         self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setMinimumSize(QSize(490, 110))
+        self.frame_2.setMinimumSize(QSize(0, 0))
         self.frame_2.setFrameShape(QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Raised)
-        self.label_7 = QLabel(self.frame_2)
-        self.label_7.setObjectName(u"label_7")
-        self.label_7.setGeometry(QRect(50, 70, 31, 21))
-        self.label_7.setStyleSheet(u"")
-        self.label_8 = QLabel(self.frame_2)
-        self.label_8.setObjectName(u"label_8")
-        self.label_8.setGeometry(QRect(380, 71, 41, 21))
-        self.label_8.setStyleSheet(u"")
-        self.label_6 = QLabel(self.frame_2)
-        self.label_6.setObjectName(u"label_6")
-        self.label_6.setGeometry(QRect(50, 50, 51, 21))
-        self.label_6.setStyleSheet(u"")
+        self.gridLayout_3 = QGridLayout(self.frame_2)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
         self.label_3 = QLabel(self.frame_2)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(10, 10, 31, 31))
         self.label_3.setPixmap(QPixmap(u":/img/UI/rsc/target.png"))
         self.label_3.setScaledContents(True)
-        self.label_9 = QLabel(self.frame_2)
-        self.label_9.setObjectName(u"label_9")
-        self.label_9.setGeometry(QRect(380, 50, 51, 21))
-        self.label_9.setStyleSheet(u"")
+
+        self.gridLayout_3.addWidget(self.label_3, 0, 0, 1, 1)
+
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.label_2 = QLabel(self.frame_2)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(50, 20, 271, 21))
+        self.label_2.setMinimumSize(QSize(0, 24))
         self.label_2.setStyleSheet(u"")
-        self.label_5 = QLabel(self.frame_2)
-        self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(390, 20, 281, 21))
-        self.label_5.setStyleSheet(u"")
+
+        self.horizontalLayout_3.addWidget(self.label_2)
+
+        self.horizontalSpacer_4 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_3.addItem(self.horizontalSpacer_4)
+
+
+        self.gridLayout_3.addLayout(self.horizontalLayout_3, 0, 1, 1, 1)
+
         self.label_4 = QLabel(self.frame_2)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(350, 10, 31, 31))
         self.label_4.setPixmap(QPixmap(u":/img/UI/rsc/task_remove.png"))
         self.label_4.setScaledContents(True)
+
+        self.gridLayout_3.addWidget(self.label_4, 0, 2, 1, 1)
+
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.label_5 = QLabel(self.frame_2)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setMinimumSize(QSize(0, 24))
+        self.label_5.setStyleSheet(u"")
+
+        self.horizontalLayout_4.addWidget(self.label_5)
+
+        self.horizontalSpacer_6 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_4.addItem(self.horizontalSpacer_6)
+
+
+        self.gridLayout_3.addLayout(self.horizontalLayout_4, 0, 3, 1, 1)
+
+        self.horizontalSpacer_7 = QSpacerItem(47, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.gridLayout_3.addItem(self.horizontalSpacer_7, 1, 0, 1, 1)
+
+        self.gridLayout = QGridLayout()
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.label_6 = QLabel(self.frame_2)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setStyleSheet(u"")
+
+        self.gridLayout.addWidget(self.label_6, 0, 0, 1, 1)
+
         self.lbl_copyFolder = QLabel(self.frame_2)
         self.lbl_copyFolder.setObjectName(u"lbl_copyFolder")
-        self.lbl_copyFolder.setGeometry(QRect(110, 50, 211, 21))
         self.lbl_copyFolder.setFont(font)
         self.lbl_copyFolder.setStyleSheet(u"")
+
+        self.gridLayout.addWidget(self.lbl_copyFolder, 0, 1, 1, 1)
+
+        self.label_7 = QLabel(self.frame_2)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setStyleSheet(u"")
+
+        self.gridLayout.addWidget(self.label_7, 1, 0, 1, 1)
+
         self.lbl_copyFile = QLabel(self.frame_2)
         self.lbl_copyFile.setObjectName(u"lbl_copyFile")
-        self.lbl_copyFile.setGeometry(QRect(110, 70, 211, 16))
         self.lbl_copyFile.setFont(font)
         self.lbl_copyFile.setStyleSheet(u"")
-        self.lbl_delFile = QLabel(self.frame_2)
-        self.lbl_delFile.setObjectName(u"lbl_delFile")
-        self.lbl_delFile.setGeometry(QRect(440, 70, 241, 21))
-        self.lbl_delFile.setFont(font)
-        self.lbl_delFile.setStyleSheet(u"")
-        self.lbl_delFolders = QLabel(self.frame_2)
-        self.lbl_delFolders.setObjectName(u"lbl_delFolders")
-        self.lbl_delFolders.setGeometry(QRect(440, 50, 231, 21))
-        self.lbl_delFolders.setFont(font)
-        self.lbl_delFolders.setStyleSheet(u"")
+
+        self.gridLayout.addWidget(self.lbl_copyFile, 1, 1, 1, 1)
+
+        self.horizontalSpacer_5 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.gridLayout.addItem(self.horizontalSpacer_5, 2, 0, 1, 1)
+
         self.lbl_copyBytes = QLabel(self.frame_2)
         self.lbl_copyBytes.setObjectName(u"lbl_copyBytes")
-        self.lbl_copyBytes.setGeometry(QRect(110, 90, 211, 16))
         self.lbl_copyBytes.setFont(font)
         self.lbl_copyBytes.setStyleSheet(u"")
+
+        self.gridLayout.addWidget(self.lbl_copyBytes, 2, 1, 1, 1)
+
+        self.gridLayout.setColumnStretch(0, 1)
+        self.gridLayout.setColumnStretch(1, 10)
+        self.gridLayout.setRowMinimumHeight(0, 24)
+        self.gridLayout.setRowMinimumHeight(1, 24)
+        self.gridLayout.setRowMinimumHeight(2, 24)
+
+        self.gridLayout_3.addLayout(self.gridLayout, 1, 1, 1, 1)
+
+        self.horizontalSpacer_8 = QSpacerItem(47, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.gridLayout_3.addItem(self.horizontalSpacer_8, 1, 2, 1, 1)
+
+        self.gridLayout_2 = QGridLayout()
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.label_9 = QLabel(self.frame_2)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setStyleSheet(u"")
+
+        self.gridLayout_2.addWidget(self.label_9, 0, 0, 1, 1)
+
+        self.lbl_delFolders = QLabel(self.frame_2)
+        self.lbl_delFolders.setObjectName(u"lbl_delFolders")
+        self.lbl_delFolders.setFont(font)
+        self.lbl_delFolders.setStyleSheet(u"")
+
+        self.gridLayout_2.addWidget(self.lbl_delFolders, 0, 1, 1, 1)
+
+        self.label_8 = QLabel(self.frame_2)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setStyleSheet(u"")
+
+        self.gridLayout_2.addWidget(self.label_8, 1, 0, 1, 1)
+
+        self.lbl_delFile = QLabel(self.frame_2)
+        self.lbl_delFile.setObjectName(u"lbl_delFile")
+        self.lbl_delFile.setFont(font)
+        self.lbl_delFile.setStyleSheet(u"")
+
+        self.gridLayout_2.addWidget(self.lbl_delFile, 1, 1, 1, 1)
+
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.gridLayout_2.addItem(self.horizontalSpacer_3, 2, 0, 1, 1)
+
         self.lbl_delBytes = QLabel(self.frame_2)
         self.lbl_delBytes.setObjectName(u"lbl_delBytes")
-        self.lbl_delBytes.setGeometry(QRect(440, 90, 211, 16))
         self.lbl_delBytes.setFont(font)
         self.lbl_delBytes.setStyleSheet(u"")
+
+        self.gridLayout_2.addWidget(self.lbl_delBytes, 2, 1, 1, 1)
+
+        self.gridLayout_2.setColumnStretch(0, 1)
+        self.gridLayout_2.setColumnStretch(1, 10)
+        self.gridLayout_2.setRowMinimumHeight(0, 24)
+        self.gridLayout_2.setRowMinimumHeight(1, 24)
+        self.gridLayout_2.setRowMinimumHeight(2, 24)
+
+        self.gridLayout_3.addLayout(self.gridLayout_2, 1, 3, 1, 1)
+
+        self.gridLayout_3.setColumnStretch(0, 1)
+        self.gridLayout_3.setColumnStretch(1, 10)
+        self.gridLayout_3.setColumnStretch(2, 1)
+        self.gridLayout_3.setColumnStretch(3, 10)
 
         self.verticalLayout_2.addWidget(self.frame_2)
 
@@ -196,19 +285,19 @@ class Ui_dlgPendng(object):
         dlgPendng.setWindowTitle(QCoreApplication.translate("dlgPendng", u"Pending changes", None))
         self.lblTitle.setText(QCoreApplication.translate("dlgPendng", u"Theses are the pending changes to", None))
         self.btnInfo.setText("")
-        self.label_7.setText(QCoreApplication.translate("dlgPendng", u"Files:", None))
-        self.label_8.setText(QCoreApplication.translate("dlgPendng", u"Files:", None))
-        self.label_6.setText(QCoreApplication.translate("dlgPendng", u"Folders:", None))
         self.label_3.setText("")
-        self.label_9.setText(QCoreApplication.translate("dlgPendng", u"Folders:", None))
         self.label_2.setText(QCoreApplication.translate("dlgPendng", u"To be copied:", None))
-        self.label_5.setText(QCoreApplication.translate("dlgPendng", u"To be deleted:", None))
         self.label_4.setText("")
+        self.label_5.setText(QCoreApplication.translate("dlgPendng", u"To be deleted:", None))
+        self.label_6.setText(QCoreApplication.translate("dlgPendng", u"Folders:", None))
         self.lbl_copyFolder.setText(QCoreApplication.translate("dlgPendng", u"Folders:", None))
+        self.label_7.setText(QCoreApplication.translate("dlgPendng", u"Files:", None))
         self.lbl_copyFile.setText(QCoreApplication.translate("dlgPendng", u"Folders:", None))
-        self.lbl_delFile.setText(QCoreApplication.translate("dlgPendng", u"Folders:", None))
-        self.lbl_delFolders.setText(QCoreApplication.translate("dlgPendng", u"Folders:", None))
         self.lbl_copyBytes.setText(QCoreApplication.translate("dlgPendng", u"Folders:", None))
+        self.label_9.setText(QCoreApplication.translate("dlgPendng", u"Folders:", None))
+        self.lbl_delFolders.setText(QCoreApplication.translate("dlgPendng", u"Folders:", None))
+        self.label_8.setText(QCoreApplication.translate("dlgPendng", u"Files:", None))
+        self.lbl_delFile.setText(QCoreApplication.translate("dlgPendng", u"Folders:", None))
         self.lbl_delBytes.setText(QCoreApplication.translate("dlgPendng", u"Folders:", None))
         self.label_10.setText(QCoreApplication.translate("dlgPendng", u"Details:", None))
         self.btnOK.setText(QCoreApplication.translate("dlgPendng", u"Proceed", None))

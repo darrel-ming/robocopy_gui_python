@@ -44,7 +44,7 @@ class Settings:
     Schedule_Folder = 'RoboCopy'
     RoboPath = "\\Tools\\Robocopy.exe"
 
-    Product_Label = "RockeyCopy"
+    Product_Label = "RocketCopy"
     Product_Version = 1.0
     Product_AboutLink = 'Help: <a href=\"https://www.lundgrensimon.com/rocketcopy/\">lundgrensimon.com/rocketcopy</a>'  # noqa
 

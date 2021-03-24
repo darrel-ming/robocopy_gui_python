@@ -18,8 +18,8 @@ class Ui_DlgExclude(object):
     def setupUi(self, DlgExclude):
         if not DlgExclude.objectName():
             DlgExclude.setObjectName(u"DlgExclude")
-        DlgExclude.resize(501, 551)
-        DlgExclude.setMinimumSize(QSize(500, 551))
+        DlgExclude.resize(500, 600)
+        DlgExclude.setMinimumSize(QSize(500, 600))
         icon = QIcon()
         icon.addFile(u":/img/UI/rsc/exclude.png", QSize(), QIcon.Normal, QIcon.On)
         DlgExclude.setWindowIcon(icon)
@@ -86,7 +86,7 @@ class Ui_DlgExclude(object):
 
         self.groupBox_2 = QGroupBox(DlgExclude)
         self.groupBox_2.setObjectName(u"groupBox_2")
-        self.groupBox_2.setMinimumSize(QSize(0, 60))
+        self.groupBox_2.setMinimumSize(QSize(0, 0))
         self.horizontalLayout_4 = QHBoxLayout(self.groupBox_2)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.chkH = QCheckBox(self.groupBox_2)
